@@ -25,7 +25,7 @@ def login():
 		# -1 means the username or password was incorrect
 		l.unbind_s();
 		return "-1"
-	except ldap.LDAPError, e:
+	except ldap.LDAPError as e:
 		# -2 means there was some other error
 		print(e)
 		l.unbind_s();

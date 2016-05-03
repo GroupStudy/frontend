@@ -14,6 +14,13 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Maybe this is important? -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
@@ -68,14 +75,17 @@
         <!-- /.container -->
     </nav>
 
+	
+
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
             <div class="container">
+
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Group Study</h1>
-			<form role="form">
+			<form role="form" action="http://localhost:8000/login" method="post" target="_blank">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
@@ -89,7 +99,7 @@
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                <input type="submit" class="btn btn-default"></button>
                             </fieldset>
                         </form>
                         <p class="intro-text">Find study partners near you<br></p>
@@ -101,6 +111,8 @@
             </div>
         </div>
     </header>
+
+
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
